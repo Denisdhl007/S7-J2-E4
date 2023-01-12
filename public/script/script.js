@@ -16,7 +16,6 @@ switch (true) {
     break;
 }
 
-
 let age = prompt("Quel âge avez-vous ?");
 if (age == 18) {
   console.log("Tu es majeur");
@@ -25,8 +24,6 @@ if (age == 18) {
 } else if (age == 50) {
   console.log("1/2 siècle c'est quelque chose");
 }
-
-
 
 // ### Exercice 2 pas adapté pour un switch. Mieux pour une fonction
 // - Demande à l'utilisateur d'indiquer un mot via un prompt. Si le mot est de type string tu lui répond via une console.log "La valeur indiquez est un string". Si le mot est de type nombre, tu lui répond "La valeur indiquez est un nombre"
@@ -68,10 +65,8 @@ switch (date.getDay()) {
     break;
 }
 
-
 // ### Exercice 4 
 // - Stock un mdp dans une variable via un prompt. Via un swtich vérifie si le mdp est le bon. Si oui tu renvoies "Connecté", sinon "Erreur"
-
 
 let mdp = prompt(`Intorduisez un mot de passe?`)
 let login = prompt(`Entrez votre mot de passe?`)
@@ -86,7 +81,6 @@ switch (true) {
         break;
 }
 
-
 let mdp = prompt(`Intorduisez un mot de passe?`)
 let login = prompt(`Entrez votre mot de passe?`)
 console.log(login);
@@ -100,14 +94,12 @@ if (mdp === login) {
   alert(`Erreur`);
 }
 
-
 // ### Exercice 5 
 // - Stock une variable qui selon toi définit TON niveau en coding. (Une note sur 100). Via un switch, vérifie sur le nombre est égale ou supérieur à 90. 
 // Si oui tu lui répond "Tu as un niveau de coach".
 // Si le le nombre est = ou > à 70, tu lui répond "Tu peux mieux faire !". 
 // Si le nombre est = ou > 50, tu lui répond "Attention, faut plus travailler ! ". 
 // Sinon tu lui répond "Pas bon du tout, à travailler davantage ! "
-
 
 let niveauCoding = 60;
 
@@ -129,7 +121,6 @@ switch(true){
     break;
 }
 
-
 let niveauCoding = prompt(`quel est votre niveau en coding?`)
 
 switch(true){
@@ -149,7 +140,6 @@ switch(true){
     console.log("Pas bon du tout, à travailler davantage !");
     break;
 }
-
 
 // ### Exercice 6
 // - Créer un programme qui va demander via un prompt le résultat d'un test scolaire. (La notation est celui inspiré du systeme Americain. Ex: A,B,C,..)
@@ -179,9 +169,6 @@ switch(true){
     console.log("Veuillez entrer une note");
     break;
 }
-
-
-
 
 // # If..else
 
