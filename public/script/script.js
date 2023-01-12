@@ -323,13 +323,13 @@ if (age < 18) {
 
 let nombre1 = prompt("Entrez un nombre");
 let nombre2 = prompt("Entrez un autre nombre");
-let operateur = prompt("Quel operateur utiliser?");
+let operateur = prompt("Donnez un opérateur: * - + ou /");
 if (operateur == "+") {
-  alert(nombre1 + nombre2);
+  console.log(`${nombre1} + ${nombre2} = ${nombre1+nombre2}`);
 } else if (operateur == "-") {
-  alert(nombre1 - nombre2);
+  console.log(`${nombre1} - ${nombre2} = ${nombre1-nombre2}`);
 } else if (operateur == "*") {
-  alert(nombre1 * nombre2);
+  console.log(`${nombre1} * ${nombre2} = ${nombre1*nombre2}`);
 } else if (operateur == "/") {
-  alert(nombre1 / nombre2);
+  console.log(`${nombre1} / ${nombre2} = ${nombre1/nombre2}`);
 }
