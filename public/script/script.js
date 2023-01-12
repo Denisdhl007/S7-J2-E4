@@ -72,16 +72,33 @@
 // // ### Exercice 4 
 // // - Stock un mdp dans une variable via un prompt. Via un swtich vérifie si le mdp est le bon. Si oui tu renvoies "Connecté", sinon "Erreur"
 
-let mdp = prompt(`Intorduisez un mot de passe?`)
-let login = prompt(`Quel est votre mot de passe?`)
-console.log(login);
-console.log(mdp);
 
-if (mdp === login) {
-  console.log("Connecté");
-} else if(mdp !== login){
-  console.log("Erreur");
-}
+// let mdp = prompt(`Intorduisez un mot de passe?`)
+// let login = prompt(`Entrez votre mot de passe?`)
+
+// switch (true) {
+//     case mdp === login:
+//         alert("connecté");
+//         break;
+
+//     case mdp !== login:
+//         alert("Erreur");
+//         break;
+// }
+
+
+// let mdp = prompt(`Intorduisez un mot de passe?`)
+// let login = prompt(`Entrez votre mot de passe?`)
+// console.log(login);
+// console.log(mdp);
+
+// if (mdp === login) {
+//   console.log("Connecté");
+//   alert(`Connected`);
+// } else if(mdp !== login){
+//   console.log("Erreur");
+//   alert(`Erreur`);
+// }
 
 
 // // ### Exercice 5 
@@ -89,20 +106,79 @@ if (mdp === login) {
 // // Si oui tu lui répond "Tu as un niveau de coach".
 // // Si le le nombre est = ou > à 70, tu lui répond "Tu peux mieux faire !". 
 // // Si le nombre est = ou > 50, tu lui répond "Attention, faut plus travailler ! ". 
-// // Sinon tu lui répond "Pas bon dutout, à travailler davantage ! "
+// // Sinon tu lui répond "Pas bon du tout, à travailler davantage ! "
+
+
+// let niveauCoding = 60;
+
+// switch(true){
+//   case niveauCoding >= 90:
+//   console.log("Tu as un niveau de coach");
+//   break;
+
+//   case niveauCoding >= 70:
+//   console.log("Tu peux mieux faire !");
+//   break;
+
+//   case niveauCoding >= 50:
+//   console.log("Attention, faut plus travailler !");
+//   break;
+
+//   default:
+//     console.log("Pas bon du tout, à travailler davantage !");
+//     break;
+// }
+
+
+// let niveauCoding = prompt(`quel est votre niveau en coding?`)
+
+// switch(true){
+//   case niveauCoding >= 90:
+//   console.log("Tu as un niveau de coach");
+//   break;
+
+//   case niveauCoding >= 70:
+//   console.log("Tu peux mieux faire !");
+//   break;
+
+//   case niveauCoding >= 50:
+//   console.log("Attention, faut plus travailler !");
+//   break;
+
+//   default:
+//     console.log("Pas bon du tout, à travailler davantage !");
+//     break;
+// }
+
 
 // // ### Exercice 6
 // // - Créer un programme qui va demander via un prompt le résultat d'un test scolaire. (La notation est celui inspiré du systeme Americain. Ex: A,B,C,..)
 // // Par rapport à la notation, vous repondez via une console.log une appréciation du résultat.
 // // Ex: Si l'étudiant a eu un B, tu lui réponds via une console.log "Bravo, belle côte"
 
+let resultTest = prompt("Quel est le résultat du test ? A, B, C ou D ?");
 
+switch(true){
+  case resultTest == "A":
+  console.log("Tu as un niveau A");
+  break;
 
+  case resultTest == "B":
+    console.log("Tu as un niveau B");
+  break;
 
+  case resultTest == "C":
+    console.log("Tu as un niveau C");
+  break;
 
+  case resultTest == "D":
+    console.log("Tu as un niveau D");
+  break;
 
-
-
+  default:
+    console.log("Veuillez entrer une note");
+    break;
+}
 
 
 // // # If..else
