@@ -259,39 +259,48 @@
 // // - Afficher `Votre prenom a 5 caractères` si la taille du prenom est == 5
 // // - Afficher `Votre prenom a plus de 5 caractères` si la taille du prenom est > 5
 
-let prenom = prompt("Entrez votre prenom");
-
-if (prenom.length < 5) {
-  console.log("Votre prenom a moins de 5 caractères");
-} else if (prenom.length == 5) {
-  console.log("Votre prenom a 5 caractères");
-} else if (prenom.length > 5) {
-  console.log("Votre prenom a plus de 5 caractères");
-}
+// let prenom = prompt("Entrez votre prenom");
+// if (prenom.length < 5) {
+//   console.log("Votre prenom a moins de 5 caractères");
+// } else if (prenom.length == 5) {
+//   console.log("Votre prenom a 5 caractères");
+// } else if (prenom.length > 5) {
+//   console.log("Votre prenom a plus de 5 caractères");
+// }
 
 // // # Exercice 4
 /* // // - Entrez 2 prenoms via des prompts */
-let prenom1 = prompt("Entrez un prenom");
-let prenom2 = prompt("Entrez un autre prenom");
 /* // // - Afficher `Prenom1 a moins de caractères que Prenom2` si la taille de prenom1 est < taille de prenom2 */
-if (prenom1.length < prenom2.length) {
-  console.log("Prenom1 a moins de caractères que Prenom2");
-}
 /* // // - Afficher `Prenom1 a le meme nombre de caractères que Prenom2` si la taille du prenom1 est == taille de prenom2 */
-else if (prenom1.length == prenom2.length) {
-  console.log("Prenom1 a le meme nombre de caractères que Prenom2");
-}
 /* // // - Afficher `Prenom1 a plus de caractères que Prenom2` si la taille du prenom1 est > taille de prenom2 */
-else if (prenom1.length > prenom2.length) {
-  console.log("Prenom1 a plus de caractères que Prenom2");
-}
+
+// let prenom1 = prompt("Entrez un prenom");
+// let prenom2 = prompt("Entrez un autre prenom");
+// if (prenom1.length < prenom2.length) {
+//   console.log("Prenom1 a moins de caractères que Prenom2");
+// } else if (prenom1.length == prenom2.length) {
+//   console.log("Prenom1 a le meme nombre de caractères que Prenom2");
+// } else if (prenom1.length > prenom2.length) {
+//   console.log("Prenom1 a plus de caractères que Prenom2");
+// }
+
 
 // // # Exercice 5
-// // - Entrez votre vitesse
-// // - La vitesse limite de la route est 50km/h
-// // - Afficher `Vous pouvez continuer a cette vitesse. (vitesse => vitesse entrée)` si la vitesse est < que le vitesse limite
-// // - Afficher `Attention vous roulez a la vitesse limite. (vitesse => vitesse entrée)` si la vitesse est == que le vitesse limite
-// // - Afficher `Ralentissez, vous avez depassé la vitesse limite!! (vitesse => vitesse entrée)` si la vitesse est > que le vitesse limite
+/* // // - Entrez une vitesse via un prompt */
+/* // // - La vitesse limite de la route est 50km/h */
+/* // // - Afficher `Vous pouvez continuer a cette vitesse si la vitesse du prompt est < à le vitesse limite. */
+/* // // - Afficher `Attention vous roulez a la vitesse limite si la vitesse du prompt est égale à la vitesse limite */
+/* // // - Afficher `Ralentissez, vous avez depassé la vitesse limite!!  si la vitesse du prompt est > que le vitesse limite */
+
+// let vitesse = prompt("Entrez une vitesse");
+// let vitesseLimite = 50;
+// if (vitesse < vitesseLimite) {
+//   alert("Vous pouvez continuer a cette vitesse");
+// } else if (vitesse == vitesseLimite) {
+//   alert("Attention vous roulez a la vitesse limite");
+// } else if (vitesse > vitesseLimite) {
+//   alert("Ralentissez, vous avez depassé la vitesse limite!!");
+// }
 
 
 
@@ -299,6 +308,10 @@ else if (prenom1.length > prenom2.length) {
 // // - Demander le prenom et l'age d'une personne.
 // // - Afficher `Salut, nom de la personne! Vu que t'as l'age de la personne ans, ce soir tu peux sortir en discoteque` si la est >= 18
 // // - Afficher `Salut, nom de la personne! Vu que t'as l'age de la personne ans, aujourd'hui tu iras au cinema` si la est < 18
+
+
+
+
 
 // // # Exercice 7
 // // - Entrer 2 nombres et demander quel operateur on veut utiliser
