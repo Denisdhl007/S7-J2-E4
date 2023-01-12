@@ -31,33 +31,58 @@
 // // ### Exercice 2 pas adapté pour un switch. Mieux pour une fonction
 // // - Demande à l'utilisateur d'indiquer un mot via un prompt. Si le mot est de type string tu lui répond via une console.log "La valeur indiquez est un string". Si le mot est de type nombre, tu lui répond "La valeur indiquez est un nombre"
 
-let mot = prompt("Indiquez un mot :");
-if (typeof mot === "string") {
-  console.log("La valeur indiquée est un string");
-} else if (typeof mot === "number") {
-  console.log("La valeur indiquée est un nombre");
-}
+// let mot = prompt("Indiquez un mot :");
+// if (typeof mot === "string") {
+//   console.log("La valeur indiquée est un string");
+// } else if (typeof mot === "number") {
+//   console.log("La valeur indiquée est un nombre");
+// }
 
 // LA CONSOLE NE RENVOIE QUE STRING
 
 // // ### Exercice 3
-// // - Stock la date d'aujourd'hui dans une variable const. (Attention utilise la méthode date). Une fois la date stockée, fais un swtich qui va nous renvoyez le jour de la semaine que nous sommes
+// // - Stock la date d'aujourd'hui dans une variable const. (Attention utilise la méthode date). Une fois la date stockée, fais un swtich qui va nous renvoyer le jour de la semaine que nous sommes
 
-const date = new Date();
-const jour = date.getDay();
-
-switch (jour) {
-  case 0:
-    console.log("Dimanche");
-    break;
-  case 1:
-    console.log("Lundi");
-    break;
-
+// let date = new Date();
+// switch (date.getDay()) {
+//   case 1:
+//     console.log("Lundi");
+//     break;
+//   case 2:
+//     console.log("Mardi");
+//     break;
+//   case 3:
+//     console.log("Mercredi");
+//     break;
+//   case 4:
+//     console.log("Jeudi");
+//     break;
+//   case 5:
+//     console.log("Vendredi");
+//     break;
+//   case 6:
+//     console.log("Samedi");
+//     break;
+//   case 7:
+//     console.log("Dimanche");
+//     break;
+// }
 
 
 // // ### Exercice 4 
 // // - Stock un mdp dans une variable via un prompt. Via un swtich vérifie si le mdp est le bon. Si oui tu renvoies "Connecté", sinon "Erreur"
+
+let mdp = prompt(`Intorduisez un mot de passe?`)
+let login = prompt(`Quel est votre mot de passe?`)
+console.log(login);
+console.log(mdp);
+
+if (mdp === login) {
+  console.log("Connecté");
+} else if(mdp !== login){
+  console.log("Erreur");
+}
+
 
 // // ### Exercice 5 
 // // - Stock une variable qui selon toi définit TON niveau en coding. (Une note sur 100). Via un switch, vérifie sur le nombre est égale ou supérieur à 90. 
