@@ -156,29 +156,31 @@
 // // Par rapport à la notation, vous repondez via une console.log une appréciation du résultat.
 // // Ex: Si l'étudiant a eu un B, tu lui réponds via une console.log "Bravo, belle côte"
 
-let resultTest = prompt("Quel est le résultat du test ? A, B, C ou D ?");
+// let resultTest = prompt("Quel est le résultat du test ? A, B, C ou D ?");
 
-switch(true){
-  case resultTest == "A":
-  console.log("Tu as un niveau A");
-  break;
+// switch(true){
+//   case resultTest == "A":
+//   console.log("Tu as un niveau A");
+//   break;
 
-  case resultTest == "B":
-    console.log("Tu as un niveau B");
-  break;
+//   case resultTest == "B":
+//     console.log("Tu as un niveau B");
+//   break;
 
-  case resultTest == "C":
-    console.log("Tu as un niveau C");
-  break;
+//   case resultTest == "C":
+//     console.log("Tu as un niveau C");
+//   break;
 
-  case resultTest == "D":
-    console.log("Tu as un niveau D");
-  break;
+//   case resultTest == "D":
+//     console.log("Tu as un niveau D");
+//   break;
 
-  default:
-    console.log("Veuillez entrer une note");
-    break;
-}
+//   default:
+//     console.log("Veuillez entrer une note");
+//     break;
+// }
+
+
 
 
 // // # If..else
@@ -187,13 +189,28 @@ switch(true){
 // // ### Exercice 1
 // // - déclare une variable avec ton prénom
 // // - via un if, vérifie dans l'instruction si le contenu de la variable est égale à ton prénom.
-// // - pour qu'une condition sois vérifiée, l'instruction doit répondre vrai
+// // - pour qu'une condition soit vérifiée, l'instruction doit répondre vrai
+
+// let name = 'Denis';
+// if (name === 'Denis') {
+//   alert('Vrai');
+// }else if(name !== 'Denis'){
+//   alert('Faux');
+// }
 
 // // ### Exercice 2
 // // - Reprend la condtion de l'exerice 1 et dans l'instruction verifie la condition avec un seul "="
 // // - dans le bloc du if, rajoute un console.log de : 'je suis dans le if"
 // // - à la suite du if, affiche le résultat de la variable que vous avez verifié
 // // - regarde le résultat et analyse le.
+
+// let name = 'Denis';
+// if (name = 'Denis') {
+//   console.log("je suis dans le if")
+//   alert('Vrai');
+// }else if(name !== 'Denis'){
+//   alert('Faux');
+// }
 
 // // ### Exercice 3
 // // - Déclarer une variable du nom de agePerso1 avec comme valeur 30 (integer) 
@@ -202,25 +219,72 @@ switch(true){
 // // - Dans un if else, passer en instruction la variable (comparaison) sans une autre instruction. Dans le if, mettez un console.log de "je suis dans le if" et dans le else, mettez un console.log de "je suis dans le else".
 // // - Regardez le résultat et analyser le
 
+// let agePerso1 = 30;
+// let agePerso2 = 40;
+// let comparaison = agePerso1;
+// if (comparaison === agePerso1 ) {
+//   console.log("je suis dans le if");
+// } else if(comparaison === agePerso2){
+//   console.log("je suis dans le else");
+// }
+
 // // ## Exercice logique
 // // # Exercice 1
 // // - A l'aide de 2 prompts, demander 2 nombres et dite quel est le plus grand
+
+// let nombre1 = prompt("Entrez un nombre");
+// let nombre2 = prompt("Entrez un autre nombre");
+// if (nombre1 > nombre2) {
+//   console.log("Le premier nombre est plus grand");
+// } else if (nombre1 < nombre2) {
+//   console.log("Le second nombre est plus grand");
+// } else {
+//   console.log("Les deux nombres sont identiques");
+// }
 
 // // # Exercice 2
 // // - A l'aide d'un prompt, demander un nombre
 // // - Afficher si le nombre est paire ou impaire 
 
+// let nombre = prompt("Entrez un nombre");
+// if (nombre % 2 == 0) {
+//   console.log("Le nombre est paire");
+// } else {
+//   console.log("Le nombre est impaire");
+// }
+
 // // # Exercice 3
 // // - A l'aide d'un prompt, demande le prenom
 // // - Afficher `Votre prenom a moins de 5 caractères` si la taille du prenom est < 5
-// // - Afficher `Votre prenom a  5 caractères` si la taille du prenom est == 5
+// // - Afficher `Votre prenom a 5 caractères` si la taille du prenom est == 5
 // // - Afficher `Votre prenom a plus de 5 caractères` si la taille du prenom est > 5
 
+let prenom = prompt("Entrez votre prenom");
+
+if (prenom.length < 5) {
+  console.log("Votre prenom a moins de 5 caractères");
+} else if (prenom.length == 5) {
+  console.log("Votre prenom a 5 caractères");
+} else if (prenom.length > 5) {
+  console.log("Votre prenom a plus de 5 caractères");
+}
+
 // // # Exercice 4
-// // - Entrez 2 prenoms via des prompts
-// // - Afficher `Prenom1 a moins de caractères que Prenom2` si la taille de prenom1 est < taille de prenom2
-// // - Afficher `Prenom1 a le meme nombre de caractères que Prenom2` si la taille du prenom1 est == taille de prenom2
-// // - Afficher `Prenom1 a plus de caractères que Prenom2` si la taille du prenom1 est > taille de prenom2
+/* // // - Entrez 2 prenoms via des prompts */
+let prenom1 = prompt("Entrez un prenom");
+let prenom2 = prompt("Entrez un autre prenom");
+/* // // - Afficher `Prenom1 a moins de caractères que Prenom2` si la taille de prenom1 est < taille de prenom2 */
+if (prenom1.length < prenom2.length) {
+  console.log("Prenom1 a moins de caractères que Prenom2");
+}
+/* // // - Afficher `Prenom1 a le meme nombre de caractères que Prenom2` si la taille du prenom1 est == taille de prenom2 */
+else if (prenom1.length == prenom2.length) {
+  console.log("Prenom1 a le meme nombre de caractères que Prenom2");
+}
+/* // // - Afficher `Prenom1 a plus de caractères que Prenom2` si la taille du prenom1 est > taille de prenom2 */
+else if (prenom1.length > prenom2.length) {
+  console.log("Prenom1 a plus de caractères que Prenom2");
+}
 
 // // # Exercice 5
 // // - Entrez votre vitesse
@@ -228,6 +292,8 @@ switch(true){
 // // - Afficher `Vous pouvez continuer a cette vitesse. (vitesse => vitesse entrée)` si la vitesse est < que le vitesse limite
 // // - Afficher `Attention vous roulez a la vitesse limite. (vitesse => vitesse entrée)` si la vitesse est == que le vitesse limite
 // // - Afficher `Ralentissez, vous avez depassé la vitesse limite!! (vitesse => vitesse entrée)` si la vitesse est > que le vitesse limite
+
+
 
 // // # Exercice 6
 // // - Demander le prenom et l'age d'une personne.
